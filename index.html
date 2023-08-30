@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="weather.js"></script>
+    <style>
+      h1 {
+        font-size: 24px;
+        display: inline;
+      }
+      div {
+        padding: 1%;
+      }
+      input {
+        font-size: 24px;
+        padding-right: 3%;
+        border-radius: 20px;
+      }
+    
+      button {
+        font-size: 24px;
+        border-radius: 20px;
+        color: rgb(4, 31, 75);
+        background-color: rgb(132, 178, 218);
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+      button:hover {
+        background-color: rgb(8, 62, 149);
+        color: white;
+      }
+      #card {
+        text-align: center;
+        /* margin-left: 32%; */
+        margin: auto;
+        margin-top: 5%;
+        border-radius: 10px;
+        background-color: rgb(174, 174, 233);
+        height: 240px;
+        width: 350px;
+      }
+      body {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <input type="text" id="city" placeholder="Enter City" />
+      <button onclick="getWeather()">Get Weather</button>
+      <div>
+        <h1>Wind:</h1>
+        <h1 id="wind"></h1>
+        <h1>knot</h1>
+      </div>
+
+      <div>
+        <h1>Sky:</h1>
+        <h1 id="sky"></h1>
+      </div>
+
+      <div>
+        <h1>Temp:</h1>
+        <h1 id="temp"></h1>
+        <h1>°F</h1>
+      </div>
+
+      <div>
+        <h1>Humidity:</h1>
+        <h1 id="humidity"></h1>
+        <h1>%</h1>
+      </div>
+    </div>
+  </body>
+</html>
